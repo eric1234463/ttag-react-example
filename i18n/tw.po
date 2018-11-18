@@ -9,7 +9,7 @@ msgstr ""
 
 #: src/App.js:17
 msgid "Click ${ btn }"
-msgstr ""
+msgstr "按 ${ btn }"
 
 #: src/App.js:11
 msgid "Use Btn"
@@ -18,3 +18,7 @@ msgstr "使用按鍵"
 #: src/App.js:16
 msgid "Hello"
 msgstr "你好"
+
+#: src/App.js:18
+msgid "Hello ${ btn }"
+msgstr "你好 ${ btn }"

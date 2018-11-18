@@ -14,7 +14,8 @@ class App extends Component {
     return (
       <div className="App">
         <div>{t`Hello`}</div>
-        <span>{jt`Click ${btn}`}</span>
+        <div>{jt`Click ${btn}`}</div>
+        <div>{jt`Hello ${btn}`}</div>
       </div>
     );
   }
