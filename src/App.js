@@ -1,25 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { jt, c, t, addLocale, useLocale } from "ttag";
 
+import logo from "./logo.svg";
+import "./App.css";
+
+const locale = "tw";
+const translationsObj = require(`../i18n/${locale}.po.json`);
+addLocale(locale, translationsObj);
+useLocale(locale);
+const btn = <button key="btn">{t`Use Btn`}</button>;
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div>{t`Hello`}</div>
+        <span>{jt`Click ${btn}`}</span>
       </div>
     );
   }
